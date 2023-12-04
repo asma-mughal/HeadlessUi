@@ -3,8 +3,9 @@ import './App.css';
 import React, { Fragment } from 'react';
 import Practice from './Practice';
 import Section2 from './Section2';
-import { Dialog } from '@headlessui/react';
+import { Dialog, RadioGroup } from '@headlessui/react';
 import MyModal from './Dialogue';
+import Example from './RadioGroup';
 
 
 function classNames(...classes) {
@@ -16,6 +17,10 @@ function App() {
   <Practice  />
   <Section2/>
 <MyModal />
+<div className='bg-red-500'>
+  helow
+<Example />
+</div>
   </>
   );
 }
