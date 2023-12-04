@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Practice from './Practice';
+import Section2 from './Section2';
 
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+  <Practice  />
+  <Section2/>
+  </>
   );
 }
 
