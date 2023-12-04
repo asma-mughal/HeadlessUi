@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { Fragment } from 'react';
+import React from 'react';
 import Practice from './Practice';
 import Section2 from './Section2';
-import { Dialog, RadioGroup } from '@headlessui/react';
 import MyModal from './Dialogue';
-import Example from './RadioGroup';
+import ExampleTabs from './Tabs';
+import MyTabs from './Tabs';
+import Example from './Tabs';
 
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 function App() {
   return (
     <>
-  <Practice  />
-  <Section2/>
-<MyModal />
+
+  <Practice />
 <div className='bg-red-500'>
-  helow
-<Example />
+<ExampleTabs />
 </div>
   </>
   );
