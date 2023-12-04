@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Fragment } from 'react';
-import { Menu, Transition } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import Practice from './Practice';
 import Section2 from './Section2';
+import { Dialog } from '@headlessui/react';
+import MyModal from './Dialogue';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -14,6 +15,7 @@ function App() {
     <>
   <Practice  />
   <Section2/>
+<MyModal />
   </>
   );
 }
