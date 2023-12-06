@@ -69,7 +69,7 @@ export default function ComboExample() {
                   >
                     {({ selected, active }) => (
                       <>
-                        <span
+                        <span 
                           className={`block truncate ${
                             selected ? 'font-medium' : 'font-normal'
                           }`}
